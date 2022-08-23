@@ -15,31 +15,53 @@
     <title>ohmyfood</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <a href="#"><h1>ohmyfood</h1></a>
-      <div><i class="fa-solid fa-location-dot"></i></div>
+      <div class="header__location"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</div>
     </header>
     <main>
-      <section class="flex-title">
+      <section class="title">
         <h2>Réservez le menu qui vous convient</h2>
-        <h3>Découvrez des restaurants d'exception,selectionés par nos soins</h3>
-        <button>Explorer nos restaurants</button>
+        <h3>Découvrez des restaurants d'exception, selectionés par nos soins</h3>
+        <button class="title__btn">Explorer nos restaurants</button>
       </section>
       <section>
         <h3>Fonctionnement</h3>
-        <ul>
-          <li>Choisissez un restaurant</li>
-          <li>Composez votre menu</li>
-          <li>Dégustez au restaurant</li>
-        </ul>
+        <ol>
+          <li><i class="fa-solid fa-mobile-screen"></i>Choisissez un restaurant</li>
+          <li><i class="fa-solid fa-list"></i>Composez votre menu</li>
+          <li><i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+        </ol>
       </section>
-      <section>
+      <section class="restaurants">
         <h3>Restaurants</h3>
-        <figure>
-          <figcaption></figcaption>
-        </figure>
+        <div>
+          <a href="page-1.html">
+            <figure class="restaurant__card">
+              <span class="restaurant__card__new">Nouveau</span>
+              <img src="images/restaurants/la_palette_du_gout.jpg" alt="La palette du goût" />
+              <figcaption class="restaurant__card__body">
+                <div class="restaurant__card__title">
+                  <h3>La palette du goût</h3>
+                  <p>Ménilmontant</p>
+                </div>
+                <span class="restaurant__card__heart"><i class="fa-regular fa-heart"></i></span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <h1>ohmyfood</h1>
+        <ul>
+          <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
+          <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+          <li>Mentions légales</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

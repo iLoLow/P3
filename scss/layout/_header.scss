@@ -1,0 +1,12 @@
+.header{
+    display: block;
+    text-align: center;
+
+    &__location{
+        background-color: #eaeaea;
+        padding: 20px;
+    }
+    a {
+        text-decoration: none;
+    }
+}

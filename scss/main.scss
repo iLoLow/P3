@@ -1,0 +1,16 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/base.scss';
+@import 'base/typography';
+
+@import 'layout/header';
+
+
+@import 'components/cover';
+@import 'components/buttons';
+
+@import 'pages/home';
+@import 'pages/restaurants';
+
+@import 'layout/footer';

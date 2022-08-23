@@ -1,0 +1,11 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w --no-source-map scss/main.scss:css/style.css"
+  },
+  "author": "laurent",
+  "license": "ISC"
+}
