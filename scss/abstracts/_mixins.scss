@@ -1,27 +1,25 @@
-@mixin btn{
-    border-radius: 25px;
-    color: white;
-    background: linear-gradient(to top, $primarycolor , $secondarycolor 100%);
-    border: none;
-    padding: 15px 20px;
+@mixin btn {
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(to top, $primarycolor, $secondarycolor 100%);
+  border: none;
+  padding: 15px 20px;
 }
 @mixin new {
-    background-color: $tetiarycolor;
-    position: absolute;
-    color: #008766;
-    right: 20px;
-    top: 20px;
-    padding: 5px 10px;
+  background-color: $tetiarycolor;
+  position: absolute;
+  color: #008766;
+  right: 20px;
+  top: 20px;
+  padding: 5px 10px;
 }
 @mixin card-border {
-    border-radius: 20px;
-    box-shadow: 0 10px 13px gray;
+  border-radius: 20px;
+  box-shadow: 0 9px 20px #dedede;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 @mixin card-title {
-    padding: 10px;
-    background-color: white;
-   
-    
+  padding: 10px;
+  background-color: white;
 }

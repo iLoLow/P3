@@ -1,6 +1,6 @@
 .title {
   &__btn {
-    margin: 20px;
+    margin-block: 20px;
     @include btn;
   }
 }

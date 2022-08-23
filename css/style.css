@@ -19,7 +19,7 @@ h1 {
   color: black;
 }
 
-h2, h3 {
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -46,7 +46,7 @@ footer h1 {
 }
 
 .title__btn {
-  margin: 20px;
+  margin-block: 20px;
   border-radius: 25px;
   color: white;
   background: linear-gradient(to top, #9356DC, #FF79DA 100%);
@@ -60,11 +60,17 @@ footer h1 {
   padding: 55px;
 }
 
+.restaurants__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .restaurant__card {
   margin: 0 20px;
   position: relative;
   border-radius: 20px;
-  box-shadow: 0 10px 13px gray;
+  box-shadow: 0 9px 20px #dedede;
   overflow: hidden;
 }
 .restaurant__card img {
@@ -76,7 +82,7 @@ footer h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 1.4;
+  line-height: 1.5;
   padding: 10px;
   background-color: white;
 }
