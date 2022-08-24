@@ -179,6 +179,14 @@ footer h2 {
   .functioning__btn {
     margin: 25px 10px;
   }
+  .restaurants__flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px 60px 20px;
+  }
+  .restaurant__card {
+    margin: 0;
+  }
 }
 .footer {
   background-color: #353535;
