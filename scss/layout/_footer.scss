@@ -1,12 +1,21 @@
-.footer{
-    background-color: #353535;
-    &__container{
-        color: white;
-        padding-left: 15px;
-        }
-        &__container ul{
-            list-style-type: none;
-            padding-left: 0;
-            line-height: 1.5;
-        }
+.footer {
+  background-color: #353535;
+  &__container {
+    color: #dedede;
+    padding: 20px;
+  }
+
+  & ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.5;
+  }
+  & ul a {
+    color: #dedede;
+  }
+  & ul i {
+    padding-right: 10px;
+    font-size: 13px;
+    line-height: 1.3;
+  }
 }

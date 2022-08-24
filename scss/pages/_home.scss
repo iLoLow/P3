@@ -1,7 +1,14 @@
 .title {
   background-color: #f6f6f6;
   text-align: center;
-  padding: 55px;
+  padding: 30px 20px;
+  & h2 {
+    margin: 10px 25px;
+  }
+  & p {
+    font-size: 18px;
+    font-weight: 300;
+  }
 }
 .functioning {
   margin: 20px;
@@ -34,10 +41,16 @@
 }
 .restaurants {
   background-color: #f6f6f6;
+  &__title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
   &__flex {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 40px;
   }
 }
 
@@ -46,9 +59,10 @@
   position: relative;
   @include card-border;
   & img {
-    max-height: 174px;
+    max-height: 175px;
     height: 100%;
     object-fit: cover;
+    object-position: center 62%;
   }
   &__body {
     display: flex;
