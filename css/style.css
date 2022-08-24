@@ -49,7 +49,7 @@ footer h1 {
   margin-block: 20px;
   border-radius: 25px;
   color: white;
-  background: linear-gradient(to top, #9356DC, #FF79DA 100%);
+  background: linear-gradient(to top, #9356dc, #ff79da 100%);
   border: none;
   padding: 15px 20px;
 }
@@ -60,6 +60,38 @@ footer h1 {
   padding: 55px;
 }
 
+.functioning {
+  margin: 30px;
+}
+.functioning__btn {
+  display: block;
+  border-radius: 15px;
+  border: none;
+  background-color: #f6f6f6;
+  box-shadow: 0 9px 20px #dedede;
+  padding: 30px 0px;
+  width: 100%;
+  margin: 15px 0px;
+  position: relative;
+}
+.functioning__btn__btn i {
+  padding-right: 30px;
+}
+.functioning__btn__number {
+  color: white;
+  border-radius: 100%;
+  background-color: #9356dc;
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 28px;
+  left: -12px;
+  padding-top: 3px;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
 .restaurants__flex {
   display: flex;
   flex-direction: column;
@@ -87,7 +119,7 @@ footer h1 {
   background-color: white;
 }
 .restaurant__card__new {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   position: absolute;
   color: #008766;
   right: 20px;

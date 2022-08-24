@@ -5,6 +5,14 @@
   border: none;
   padding: 15px 20px;
 }
+@mixin functioning-btn {
+  border-radius: 15px;
+  border: none;
+  background-color: #f6f6f6;
+  box-shadow: 0 9px 20px #dedede;
+  padding: 30px 0px;
+  width: 100%;
+}
 @mixin new {
   background-color: $tetiarycolor;
   position: absolute;
@@ -16,7 +24,6 @@
 @mixin card-border {
   border-radius: 20px;
   box-shadow: 0 9px 20px #dedede;
-
   overflow: hidden;
 }
 @mixin card-title {

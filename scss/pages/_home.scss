@@ -3,7 +3,31 @@
   text-align: center;
   padding: 55px;
 }
+.functioning {
+  margin: 30px;
+  &__btn {
+    display: block;
+    @include functioning-btn;
+    margin: 15px 0px;
+    position: relative;
+    &__btn i {
+      padding-right: 30px;
+    }
+    &__number {
+      color: white;
+      border-radius: 100%;
+      background-color: $primarycolor;
+      position: absolute;
+      height: 24px;
+      width: 24px;
+      top: 28px;
+      left: -12px;
+      padding-top: 3px;
+    }
+  }
+}
 .restaurants {
+  background-color: #f6f6f6;
   &__flex {
     display: flex;
     flex-direction: column;
