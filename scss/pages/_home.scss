@@ -71,6 +71,9 @@
     line-height: 1.5;
     @include card-title;
   }
+  &__title p {
+    font-weight: 300;
+  }
   &__new {
     @include new;
   }

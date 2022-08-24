@@ -10,6 +10,10 @@
   &__location {
     background-color: rgba(128, 128, 128, 0.2);
     padding: 15px;
+    font-weight: bold;
+    & i {
+      padding-right: 15px;
+    }
   }
   a {
     text-decoration: none;

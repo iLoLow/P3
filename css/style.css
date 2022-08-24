@@ -48,6 +48,10 @@ footer h2 {
 .header__location {
   background-color: rgba(128, 128, 128, 0.2);
   padding: 15px;
+  font-weight: bold;
+}
+.header__location i {
+  padding-right: 15px;
 }
 .header a {
   text-decoration: none;
@@ -146,8 +150,11 @@ footer h2 {
   justify-content: space-between;
   align-items: center;
   line-height: 1.5;
-  padding: 10px;
+  padding: 15px;
   background-color: white;
+}
+.restaurant__card__title p {
+  font-weight: 300;
 }
 .restaurant__card__new {
   background-color: #99e2d0;
