@@ -84,6 +84,9 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .title {
+    background-color: #ffffff;
+  }
   .functioning {
     display: block;
     &__flex {
@@ -94,6 +97,7 @@
     }
   }
   .restaurants {
+    background-color: #ffffff;
     &__flex {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

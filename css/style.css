@@ -13,6 +13,12 @@ a {
   color: black;
 }
 
+main {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
   color: black;
@@ -170,6 +176,9 @@ footer h2 {
 }
 
 @media screen and (min-width: 992px) {
+  .title {
+    background-color: #ffffff;
+  }
   .functioning {
     display: block;
   }
@@ -178,6 +187,9 @@ footer h2 {
   }
   .functioning__btn {
     margin: 25px 10px;
+  }
+  .restaurants {
+    background-color: #ffffff;
   }
   .restaurants__flex {
     display: grid;
