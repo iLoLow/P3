@@ -81,7 +81,10 @@ footer h2 {
 }
 
 .functioning {
-  margin: 20px;
+  padding: 20px 20px;
+}
+.functioning h2 {
+  padding: 15px;
 }
 .functioning__btn {
   display: block;
