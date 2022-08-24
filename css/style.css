@@ -81,7 +81,7 @@ footer h2 {
 }
 
 .functioning {
-  padding: 20px 20px;
+  padding: 20px 20px 50px 20px;
 }
 .functioning h2 {
   padding: 15px;
@@ -124,15 +124,13 @@ footer h2 {
   background-color: #f6f6f6;
 }
 .restaurants__title {
-  padding-top: 50px;
-  padding-bottom: 30px;
-  padding-left: 20px;
+  padding: 50px 0 30px 20px;
 }
 .restaurants__flex {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .restaurant__card {
