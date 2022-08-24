@@ -58,6 +58,7 @@ footer h1 {
   background: linear-gradient(to top, #9356dc, #ff79da 100%);
   border: none;
   padding: 15px 20px;
+  font-weight: bold;
 }
 
 .title {
@@ -94,6 +95,7 @@ footer h1 {
   left: -12px;
   text-align: center;
   line-height: 1.6;
+  font-weight: normal;
 }
 .functioning__btn i {
   margin-left: 30px;

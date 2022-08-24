@@ -2,5 +2,6 @@
   &__btn {
     margin-block: 20px;
     @include btn;
+    font-weight: bold;
   }
 }
