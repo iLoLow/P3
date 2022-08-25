@@ -206,6 +206,11 @@ footer h2 {
     margin: 25px 10px;
   }
 }
+.overlay {
+  object-fit: cover;
+  height: 250px;
+}
+
 .footer {
   background-color: #353535;
 }
