@@ -83,18 +83,13 @@
     font-size: 24px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 767px) {
   .title {
     background-color: #ffffff;
   }
   .functioning {
     display: block;
-    &__flex {
-      display: flex;
-    }
-    &__btn {
-      margin: 25px 10px;
-    }
+    padding: 20px 25px 25px 25px;
   }
   .restaurants {
     background-color: #ffffff;
@@ -103,8 +98,21 @@
       grid-template-columns: repeat(2, 1fr);
       padding: 0 20px 60px 20px;
     }
+    &__title {
+      padding: 0px 0 30px 20px;
+    }
   }
   .restaurant__card {
     margin: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .functioning {
+    &__flex {
+      display: flex;
+    }
+    &__btn {
+      margin: 25px 10px;
+    }
   }
 }
