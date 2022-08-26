@@ -2,6 +2,9 @@
   background-color: #f6f6f6;
   text-align: center;
   padding: 30px 20px;
+  @include tablet-only {
+    background-color: #ffffff;
+  }
   & h2 {
     margin: 10px 25px;
   }
@@ -12,7 +15,18 @@
 }
 .functioning {
   padding: 20px 25px 50px 25px;
-
+  @include tablet-only {
+    display: block;
+    padding: 20px 25px 25px 25px;
+  }
+  @include desktop-only {
+    &__flex {
+      display: flex;
+    }
+    &__btn {
+      margin: 25px 10px;
+    }
+  }
   & h2 {
     padding: 15px 0;
   }
@@ -45,6 +59,17 @@
 }
 .restaurants {
   background-color: #f6f6f6;
+  @include tablet-only {
+    background-color: #ffffff;
+    &__flex {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 20px 60px 20px;
+    }
+    &__title {
+      padding: 0px 0 30px 20px;
+    }
+  }
   &__title {
     padding: 50px 0 30px 20px;
   }
@@ -60,6 +85,9 @@
   margin: 0 20px;
   position: relative;
   @include card-border;
+  @include tablet-only {
+    margin: 0;
+  }
   & img {
     max-height: 175px;
     height: 100%;
@@ -81,38 +109,5 @@
   }
   &__heart {
     font-size: 24px;
-  }
-}
-@media screen and (min-width: 767px) {
-  .title {
-    background-color: #ffffff;
-  }
-  .functioning {
-    display: block;
-    padding: 20px 25px 25px 25px;
-  }
-  .restaurants {
-    background-color: #ffffff;
-    &__flex {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      padding: 0 20px 60px 20px;
-    }
-    &__title {
-      padding: 0px 0 30px 20px;
-    }
-  }
-  .restaurant__card {
-    margin: 0;
-  }
-}
-@media screen and (min-width: 992px) {
-  .functioning {
-    &__flex {
-      display: flex;
-    }
-    &__btn {
-      margin: 25px 10px;
-    }
   }
 }
