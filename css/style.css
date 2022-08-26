@@ -56,6 +56,9 @@ footer h2 {
   margin: 0;
 }
 .header__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(128, 128, 128, 0.14);
   padding: 15px;
   font-weight: bold;
@@ -63,8 +66,11 @@ footer h2 {
 .header__location i {
   padding-right: 15px;
 }
-.header a {
-  text-decoration: none;
+.header__location__search {
+  border: none;
+  background-color: transparent;
+  width: 120px;
+  font-weight: bold;
 }
 
 .title__btn {

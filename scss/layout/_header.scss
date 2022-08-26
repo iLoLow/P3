@@ -8,14 +8,20 @@
   }
 
   &__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(128, 128, 128, 0.14);
     padding: 15px;
     font-weight: bold;
     & i {
       padding-right: 15px;
     }
-  }
-  a {
-    text-decoration: none;
+    &__search {
+      border: none;
+      background-color: transparent;
+      width: 120px;
+      font-weight: bold;
+    }
   }
 }
