@@ -34,9 +34,7 @@
     position: relative;
     font-weight: bold;
     @include desktop-only {
-      & {
-        margin: 25px 10px;
-      }
+      margin: 25px 10px;
     }
 
     &__number {
@@ -71,19 +69,16 @@
     flex-direction: column;
     gap: 20px;
     padding-bottom: 60px;
-  }
-  @include tablet-only {
-    &__flex {
+    @include tablet-only {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       padding: 0 20px 60px 20px;
     }
   }
+
   &__title {
     padding: 50px 0 30px 20px;
-  }
-  @include tablet-only {
-    &__title {
+    @include tablet-only {
       padding: 0px 0 30px 20px;
     }
   }
