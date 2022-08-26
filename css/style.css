@@ -56,7 +56,7 @@ footer h2 {
   margin: 0;
 }
 .header__location {
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: rgba(128, 128, 128, 0.14);
   padding: 15px;
   font-weight: bold;
 }
@@ -104,16 +104,13 @@ footer h2 {
     padding: 20px 25px 25px 25px;
   }
 }
+.functioning h2 {
+  padding: 15px 0;
+}
 @media screen and (min-width: 992px) {
   .functioning__flex {
     display: flex;
   }
-  .functioning__btn {
-    margin: 25px 10px;
-  }
-}
-.functioning h2 {
-  padding: 15px 0;
 }
 .functioning__btn {
   display: block;
@@ -128,6 +125,11 @@ footer h2 {
   margin: 25px 0px;
   position: relative;
   font-weight: bold;
+}
+@media screen and (min-width: 992px) {
+  .functioning__btn {
+    margin: 25px 10px;
+  }
 }
 .functioning__btn__number {
   color: white;
@@ -156,23 +158,27 @@ footer h2 {
   .restaurants {
     background-color: #ffffff;
   }
-  .restaurants__flex {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0 20px 60px 20px;
-  }
-  .restaurants__title {
-    padding: 0px 0 30px 20px;
-  }
-}
-.restaurants__title {
-  padding: 50px 0 30px 20px;
 }
 .restaurants__flex {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 767px) {
+  .restaurants__flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px 60px 20px;
+  }
+}
+.restaurants__title {
+  padding: 50px 0 30px 20px;
+}
+@media screen and (min-width: 767px) {
+  .restaurants__title {
+    padding: 0px 0 30px 20px;
+  }
 }
 
 .restaurant__card {

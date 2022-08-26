@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass -w --no-source-map scss/main.scss:css/style.css"
+    "sass": "sass -w --no-source-map scss/main.scss:css/style.css",
+    "prefix": "postcss css/style.css --use autoprefixer -d css/prefixed/"
   },
   "author": "laurent",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }

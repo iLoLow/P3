@@ -19,16 +19,13 @@
     display: block;
     padding: 20px 25px 25px 25px;
   }
+  & h2 {
+    padding: 15px 0;
+  }
   @include desktop-only {
     &__flex {
       display: flex;
     }
-    &__btn {
-      margin: 25px 10px;
-    }
-  }
-  & h2 {
-    padding: 15px 0;
   }
   &__btn {
     display: block;
@@ -36,6 +33,12 @@
     margin: 25px 0px;
     position: relative;
     font-weight: bold;
+    @include desktop-only {
+      & {
+        margin: 25px 10px;
+      }
+    }
+
     &__number {
       color: white;
       border-radius: 100%;
@@ -57,27 +60,32 @@
     }
   }
 }
+
 .restaurants {
   background-color: #f6f6f6;
   @include tablet-only {
     background-color: #ffffff;
-    &__flex {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      padding: 0 20px 60px 20px;
-    }
-    &__title {
-      padding: 0px 0 30px 20px;
-    }
-  }
-  &__title {
-    padding: 50px 0 30px 20px;
   }
   &__flex {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-bottom: 60px;
+  }
+  @include tablet-only {
+    &__flex {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 20px 60px 20px;
+    }
+  }
+  &__title {
+    padding: 50px 0 30px 20px;
+  }
+  @include tablet-only {
+    &__title {
+      padding: 0px 0 30px 20px;
+    }
   }
 }
 
