@@ -3,6 +3,11 @@
   &__container {
     color: #dedede;
     padding: 20px;
+    @include desktop-only {
+      max-width: 1440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   & ul {
     list-style-type: none;
