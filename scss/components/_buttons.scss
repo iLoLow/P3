@@ -3,5 +3,10 @@
     margin-block: 20px;
     @include btn;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 700ms;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

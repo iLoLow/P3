@@ -33,10 +33,14 @@
     margin: 25px 0px;
     position: relative;
     font-weight: bold;
+    cursor: pointer;
+
     @include desktop-only {
       margin: 25px 10px;
     }
-
+    &:hover {
+      background-color: #fad7f1;
+    }
     &__number {
       color: white;
       border-radius: 100%;
@@ -50,7 +54,7 @@
       line-height: 1.6;
       font-weight: normal;
     }
-    & i {
+    &__test {
       margin-left: 30px;
       margin-right: 20px;
       font-size: 18px;

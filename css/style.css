@@ -78,9 +78,15 @@ footer h2 {
   border-radius: 25px;
   color: white;
   background: linear-gradient(to top, #9356dc, #ff79da 100%);
+  box-shadow: 0 3px 8px 2px #dedede;
   border: none;
   padding: 15px 20px;
   font-weight: bold;
+  cursor: pointer;
+  transition: all 700ms;
+}
+.title__btn:hover {
+  opacity: 0.8;
 }
 
 .title {
@@ -128,14 +134,19 @@ footer h2 {
   width: 100%;
   height: 75px;
   text-align: start;
+  transition: all 450ms;
   margin: 25px 0px;
   position: relative;
   font-weight: bold;
+  cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .functioning__btn {
     margin: 25px 10px;
   }
+}
+.functioning__btn:hover {
+  background-color: #fad7f1;
 }
 .functioning__btn__number {
   color: white;
@@ -150,7 +161,7 @@ footer h2 {
   line-height: 1.6;
   font-weight: normal;
 }
-.functioning__btn i {
+.functioning__btn__test {
   margin-left: 30px;
   margin-right: 20px;
   font-size: 18px;
