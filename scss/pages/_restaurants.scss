@@ -30,6 +30,10 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    @include tablet-only {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
     @include desktop-only {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -62,8 +66,13 @@
     margin: 35px auto 85px auto;
     cursor: pointer;
     height: 48px;
+
+    @include tablet-only {
+      margin: auto;
+    }
     @include desktop-only {
       grid-column-start: 2;
+      margin: 30px auto 55px auto;
     }
 
     &:hover {
