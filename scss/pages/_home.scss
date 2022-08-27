@@ -34,13 +34,16 @@
     position: relative;
     font-weight: bold;
     cursor: pointer;
-
+    &:hover {
+      background-color: #fad7f1;
+      i {
+        color: $primarycolor;
+      }
+    }
     @include desktop-only {
       margin: 25px 10px;
     }
-    &:hover {
-      background-color: #fad7f1;
-    }
+
     &__number {
       color: white;
       border-radius: 100%;
@@ -54,7 +57,7 @@
       line-height: 1.6;
       font-weight: normal;
     }
-    &__test {
+    & i {
       margin-left: 30px;
       margin-right: 20px;
       font-size: 18px;

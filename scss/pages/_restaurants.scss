@@ -58,14 +58,17 @@
   }
   &__btn {
     @include btn;
-    padding: 15px 60px;
+    padding: 15px 50px;
     margin: 35px auto 85px auto;
+    cursor: pointer;
+    height: 48px;
+    @include desktop-only {
+      grid-column-start: 2;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 0 3px 3px 3px #c0c0c0;
+    }
   }
 }
-span {
-  font-weight: bold;
-}
-/*.food__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}*/
