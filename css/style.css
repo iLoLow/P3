@@ -253,7 +253,7 @@ footer h2 {
   z-index: -1;
 }
 
-.title {
+.main__title {
   font-family: "Shrikhand", cursive;
   border-radius: 40px 40px 0 0;
   background-color: #f6f6f6;
@@ -263,12 +263,22 @@ footer h2 {
   justify-content: space-between;
   margin-top: 210px;
 }
-.title__heart {
+.main__title__heart {
   font-size: 25px;
 }
 
 .food {
   background-color: #f6f6f6;
+}
+.food__cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media screen and (min-width: 992px) {
+  .food__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .food__card {
   border-radius: 20px;
@@ -286,11 +296,24 @@ footer h2 {
 .food__card__check {
   display: none;
 }
+.food__btn {
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(to top, #9356dc, #ff79da 100%);
+  box-shadow: 0 3px 8px 2px #dedede;
+  border: none;
+  padding: 15px 20px;
+  padding: 15px 60px;
+}
 
 span {
   font-weight: bold;
 }
 
+/*.food__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}*/
 .footer {
   background-color: #353535;
 }

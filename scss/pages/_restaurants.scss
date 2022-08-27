@@ -10,21 +10,31 @@
   height: 250px;
   z-index: -1;
 }
-.title {
-  font-family: "Shrikhand", cursive;
-  border-radius: 40px 40px 0 0;
-  background-color: #f6f6f6;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 210px;
-  &__heart {
-    font-size: 25px;
+.main {
+  &__title {
+    font-family: "Shrikhand", cursive;
+    border-radius: 40px 40px 0 0;
+    background-color: #f6f6f6;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 210px;
+    &__heart {
+      font-size: 25px;
+    }
   }
 }
 .food {
   background-color: #f6f6f6;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @include desktop-only {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
   &__card {
     border-radius: 20px;
     background-color: white;
@@ -41,7 +51,15 @@
       display: none;
     }
   }
+  &__btn {
+    @include btn;
+    padding: 15px 60px;
+  }
 }
 span {
   font-weight: bold;
 }
+/*.food__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}*/
