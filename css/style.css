@@ -250,35 +250,45 @@ footer h2 {
   position: absolute;
   object-fit: cover;
   height: 250px;
+  z-index: -1;
 }
 
-.menu {
-  position: relative;
-  top: 215px;
+.title {
+  font-family: "Shrikhand", cursive;
   border-radius: 40px 40px 0 0;
   background-color: #f6f6f6;
   padding: 15px;
-}
-.menu__title {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 210px;
+}
+.title__heart {
+  font-size: 25px;
 }
 
-.feed__card {
+.food {
+  background-color: #f6f6f6;
+}
+.food__card {
   border-radius: 20px;
   background-color: white;
-  padding: 15px;
+  padding: 10px;
   box-shadow: 0 3px 8px 2px #dedede;
-  line-height: 1.5;
+  line-height: 1.4;
   margin: 15px 5px;
+  cursor: pointer;
 }
-.feed__card__body {
+.food__card__body {
   display: flex;
   justify-content: space-between;
 }
-.feed__card__check {
+.food__card__check {
   display: none;
+}
+
+span {
+  font-weight: bold;
 }
 
 .footer {

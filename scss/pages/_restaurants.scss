@@ -8,27 +8,31 @@
   position: absolute;
   object-fit: cover;
   height: 250px;
+  z-index: -1;
 }
-.menu {
-  position: relative;
-  top: 215px;
+.title {
+  font-family: "Shrikhand", cursive;
   border-radius: 40px 40px 0 0;
   background-color: #f6f6f6;
   padding: 15px;
-  &__title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 210px;
+  &__heart {
+    font-size: 25px;
   }
 }
-.feed {
+.food {
+  background-color: #f6f6f6;
   &__card {
     border-radius: 20px;
     background-color: white;
-    padding: 15px;
+    padding: 10px;
     box-shadow: 0 3px 8px 2px #dedede;
-    line-height: 1.5;
+    line-height: 1.4;
     margin: 15px 5px;
+    cursor: pointer;
     &__body {
       display: flex;
       justify-content: space-between;
@@ -37,4 +41,7 @@
       display: none;
     }
   }
+}
+span {
+  font-weight: bold;
 }
