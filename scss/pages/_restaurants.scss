@@ -15,7 +15,7 @@
     font-family: "Shrikhand", cursive;
     border-radius: 40px 40px 0 0;
     background-color: #f6f6f6;
-    padding: 15px;
+    padding: 35px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,6 +34,11 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
+    &__entries,
+    &__dish,
+    &__dessert {
+      padding: 10px;
+    }
   }
   &__card {
     border-radius: 20px;
@@ -41,7 +46,7 @@
     padding: 10px;
     box-shadow: 0 3px 8px 2px #dedede;
     line-height: 1.4;
-    margin: 15px 5px;
+    margin: 15px 0;
     cursor: pointer;
     &__body {
       display: flex;
@@ -54,6 +59,7 @@
   &__btn {
     @include btn;
     padding: 15px 60px;
+    margin: 35px auto 85px auto;
   }
 }
 span {

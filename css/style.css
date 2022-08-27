@@ -257,7 +257,7 @@ footer h2 {
   font-family: "Shrikhand", cursive;
   border-radius: 40px 40px 0 0;
   background-color: #f6f6f6;
-  padding: 15px;
+  padding: 35px 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -280,13 +280,16 @@ footer h2 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.food__cards__entries, .food__cards__dish, .food__cards__dessert {
+  padding: 10px;
+}
 .food__card {
   border-radius: 20px;
   background-color: white;
   padding: 10px;
   box-shadow: 0 3px 8px 2px #dedede;
   line-height: 1.4;
-  margin: 15px 5px;
+  margin: 15px 0;
   cursor: pointer;
 }
 .food__card__body {
@@ -304,6 +307,7 @@ footer h2 {
   border: none;
   padding: 15px 20px;
   padding: 15px 60px;
+  margin: 35px auto 85px auto;
 }
 
 span {
