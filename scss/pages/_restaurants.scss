@@ -5,6 +5,36 @@
   font-size: 25px;
 }
 .overlay {
+  position: absolute;
   object-fit: cover;
   height: 250px;
+}
+.menu {
+  position: relative;
+  top: 215px;
+  border-radius: 40px 40px 0 0;
+  background-color: #f6f6f6;
+  padding: 15px;
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.feed {
+  &__card {
+    border-radius: 20px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 3px 8px 2px #dedede;
+    line-height: 1.5;
+    margin: 15px 5px;
+    &__body {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__check {
+      display: none;
+    }
+  }
 }
