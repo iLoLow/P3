@@ -66,6 +66,7 @@
     margin: 35px auto 85px auto;
     cursor: pointer;
     height: 48px;
+    transition: all 700ms;
 
     @include tablet-only {
       margin: auto;
