@@ -12,10 +12,11 @@
 }
 .main {
   &__title {
+    font-size: 20px;
     font-family: "Shrikhand", cursive;
     border-radius: 40px 40px 0 0;
     background-color: #f6f6f6;
-    padding: 35px 25px;
+    padding: 35px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,6 +43,19 @@
     &__dish,
     &__dessert {
       padding: 10px;
+      min-width: 30%;
+      &__title {
+        font-weight: normal;
+        font-weight: 300;
+        &::after {
+          display: block;
+          content: "";
+          width: 45px;
+          height: 4px;
+          background: $tetiarycolor;
+          margin-top: 5px;
+        }
+      }
     }
   }
   &__card {
@@ -50,16 +64,17 @@
     box-shadow: 0 3px 8px 2px #dedede;
     line-height: 1.4;
     margin: 15px 0;
-    height: 70px;
+    height: 75px;
     width: 100%;
     cursor: pointer;
     overflow: hidden;
+
     &:hover {
       .food__card__body {
         width: calc(100% - 65px);
       }
       .food__card__body__check i {
-        animation: rotate-check 350ms ease-in forwards;
+        animation: rotate-check 370ms ease-in forwards;
       }
     }
 
@@ -78,11 +93,13 @@
       &__text {
         display: flex;
         justify-content: space-between;
+        font-weight: 300;
         & p {
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap;
           width: 100%;
+          font-size: 17px;
         }
       }
       &__check {
