@@ -1,3 +1,7 @@
+/*mixin bouton*/
+/*mixin label new*/
+/*mixin card food*/
+/*mixin breakpoints*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -50,6 +54,7 @@ span {
   font-weight: bold;
 }
 
+/*start of header*/
 .header {
   display: block;
   text-align: center;
@@ -73,10 +78,13 @@ span {
 .header__location__search {
   border: none;
   background-color: transparent;
-  width: 120px;
+  width: 125px;
   font-weight: bold;
 }
 
+/*end header*/
+/*start loader spinner*/
+/*background loader*/
 .loader {
   width: 100%;
   height: 100%;
@@ -99,7 +107,7 @@ span {
   right: 0;
   bottom: 0;
   margin: auto;
-  z-index: 11;
+  /*breackpoint spinner*/
 }
 @media screen and (min-width: 767px) {
   .loader__spinner {
@@ -111,23 +119,7 @@ span {
   }
 }
 
-.title__btn {
-  margin-block: 20px;
-  border-radius: 25px;
-  color: white;
-  background: linear-gradient(to top, #9356dc, #ff79da 100%);
-  box-shadow: 0 3px 8px 2px #dedede;
-  border: none;
-  padding: 15px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 700ms;
-}
-.title__btn:hover {
-  opacity: 0.8;
-  box-shadow: 0 3px 3px 3px #c0c0c0;
-}
-
+/*end loader spinner*/
 .title {
   background-color: #f6f6f6;
   text-align: center;
@@ -144,6 +136,22 @@ span {
 .title p {
   font-size: 18px;
   font-weight: 300;
+}
+.title__btn {
+  margin-block: 20px;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(to top, #9356dc, #ff79da 100%);
+  box-shadow: 0 3px 8px 2px #dedede;
+  border: none;
+  padding: 15px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 700ms;
+}
+.title__btn:hover {
+  opacity: 0.8;
+  box-shadow: 0 3px 3px 3px #c0c0c0;
 }
 
 .functioning {
@@ -246,6 +254,9 @@ span {
   border-radius: 20px;
   box-shadow: 0 9px 20px #dedede;
   overflow: hidden;
+}
+.restaurant__card:hover {
+  box-shadow: 0px 0px 6px #4a4747;
 }
 @media screen and (min-width: 767px) {
   .restaurant__card {
@@ -451,30 +462,48 @@ span {
   box-shadow: 0 3px 3px 3px #c0c0c0;
 }
 
-@keyframes rotate-check {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(1turn);
-  }
+/*apparition menu food for restaurant page*/
+.apparition-menu-1 {
+  animation: 500ms 100ms linear apparition-menu-animation both;
 }
-@keyframes scalingHeart {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(2.6);
-  }
+
+.apparition-menu-2 {
+  animation: 500ms 200ms linear apparition-menu-animation both;
 }
-@keyframes fadingHeart {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+
+.apparition-menu-3 {
+  animation: 500ms 300ms linear apparition-menu-animation both;
 }
+
+.apparition-menu-4 {
+  animation: 500ms 400ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-5 {
+  animation: 500ms 500ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-6 {
+  animation: 500ms 600ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-7 {
+  animation: 500ms 700ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-8 {
+  animation: 500ms 800ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-9 {
+  animation: 500ms 900ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-10 {
+  animation: 500ms 1s linear apparition-menu-animation both;
+}
+
+/*animation spinner loader*/
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -495,6 +524,47 @@ span {
   to {
     opacity: 0;
     z-index: -10;
+  }
+}
+/*animation heart*/
+@keyframes scalingHeart {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(2.6);
+  }
+}
+@keyframes fadingHeart {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*animation menu food check rotate*/
+@keyframes rotate-check {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/*animation menu food*/
+@keyframes apparition-menu-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .footer {

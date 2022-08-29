@@ -142,12 +142,43 @@
     }
   }
 }
+/*apparition menu food for restaurant page*/
+.apparition-menu-1 {
+  animation: 500ms 100ms linear apparition-menu-animation both;
+}
 
-@keyframes rotate-check {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(1turn);
-  }
+.apparition-menu-2 {
+  animation: 500ms 200ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-3 {
+  animation: 500ms 300ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-4 {
+  animation: 500ms 400ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-5 {
+  animation: 500ms 500ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-6 {
+  animation: 500ms 600ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-7 {
+  animation: 500ms 700ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-8 {
+  animation: 500ms 800ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-9 {
+  animation: 500ms 900ms linear apparition-menu-animation both;
+}
+
+.apparition-menu-10 {
+  animation: 500ms 1s linear apparition-menu-animation both;
 }

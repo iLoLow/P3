@@ -1,3 +1,4 @@
+/*mixin bouton*/
 @mixin btn {
   border-radius: 25px;
   color: white;
@@ -17,6 +18,7 @@
   text-align: start;
   transition: all 450ms;
 }
+/*mixin label new*/
 @mixin new {
   background-color: $tetiarycolor;
   position: absolute;
@@ -25,6 +27,7 @@
   top: 20px;
   padding: 5px 10px;
 }
+/*mixin card food*/
 @mixin card-border {
   border-radius: 20px;
   box-shadow: 0 9px 20px #dedede;
@@ -35,6 +38,7 @@
   background-color: white;
 }
 
+/*mixin breakpoints*/
 @mixin tablet-only {
   @media screen and (min-width: map-get($breakpoints, tablet)) {
     @content;

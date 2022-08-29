@@ -1,3 +1,4 @@
+/*start of header*/
 .header {
   display: block;
   text-align: center;
@@ -20,8 +21,9 @@
     &__search {
       border: none;
       background-color: transparent;
-      width: 120px;
+      width: 125px;
       font-weight: bold;
     }
   }
 }
+/*end header*/
