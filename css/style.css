@@ -357,10 +357,10 @@ span {
   font-weight: 300;
 }
 .food__cards__entries__title::after, .food__cards__dish__title::after, .food__cards__dessert__title::after {
-  display: block;
   content: "";
-  width: 45px;
+  display: block;
   height: 4px;
+  width: 45px;
   background: #99e2d0;
   margin-top: 5px;
 }
@@ -376,7 +376,7 @@ span {
   overflow: hidden;
 }
 .food__card:hover .food__card__body {
-  width: calc(100% - 65px);
+  width: calc(100% - 75px);
 }
 .food__card:hover .food__card__body__check i {
   animation: rotate-check 370ms ease-in forwards;
@@ -404,7 +404,7 @@ span {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
-  font-size: 17px;
+  font-size: 16px;
 }
 .food__card__body__check {
   position: absolute;
@@ -412,14 +412,14 @@ span {
   bottom: 0;
   left: 100%;
   background: #99e2d0;
-  width: 65px;
+  width: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .food__card__body__check i {
   color: white;
-  font-size: 22px;
+  font-size: 24px;
 }
 .food__btn {
   border-radius: 25px;
@@ -489,6 +489,20 @@ span {
   to {
     opacity: 0;
     z-index: -10;
+  }
+}
+@keyframes apparition-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  25% {
+    opacity: 0.5;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .footer {

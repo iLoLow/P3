@@ -48,10 +48,10 @@
         font-weight: normal;
         font-weight: 300;
         &::after {
-          display: block;
           content: "";
-          width: 45px;
+          display: block;
           height: 4px;
+          width: 45px;
           background: $tetiarycolor;
           margin-top: 5px;
         }
@@ -71,7 +71,7 @@
 
     &:hover {
       .food__card__body {
-        width: calc(100% - 65px);
+        width: calc(100% - 75px);
       }
       .food__card__body__check i {
         animation: rotate-check 370ms ease-in forwards;
@@ -99,7 +99,7 @@
           overflow: hidden;
           white-space: nowrap;
           width: 100%;
-          font-size: 17px;
+          font-size: 16px;
         }
       }
       &__check {
@@ -108,14 +108,14 @@
         bottom: 0;
         left: 100%;
         background: #99e2d0;
-        width: 65px;
+        width: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         & i {
           color: white;
-          font-size: 22px;
+          font-size: 24px;
         }
       }
     }
