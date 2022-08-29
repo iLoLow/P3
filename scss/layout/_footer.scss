@@ -16,6 +16,9 @@
   }
   & ul a {
     color: #dedede;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   & ul i {
     padding-right: 10px;

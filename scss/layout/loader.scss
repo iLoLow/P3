@@ -19,7 +19,7 @@
     right: 0;
     bottom: 0;
     margin: auto;
-
+    z-index: 11;
     @include tablet-only {
       height: 80px;
       width: 80px;
