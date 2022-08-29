@@ -26,8 +26,8 @@
   }
 }
 .food {
-  background-color: #f6f6f6;
   &__cards {
+    background: #f6f6f6;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     @include tablet-only {
@@ -47,17 +47,60 @@
   &__card {
     border-radius: 20px;
     background-color: white;
-    padding: 10px;
     box-shadow: 0 3px 8px 2px #dedede;
     line-height: 1.4;
     margin: 15px 0;
+    height: 70px;
+    width: 100%;
     cursor: pointer;
-    &__body {
-      display: flex;
-      justify-content: space-between;
+    overflow: hidden;
+    &:hover {
+      .food__card__body {
+        width: calc(100% - 65px);
+      }
+      .food__card__body__check i {
+        animation: rotate-check 350ms ease-in forwards;
+      }
     }
-    &__check {
-      display: none;
+
+    &__body {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 10px;
+      transition: width 350ms ease-in-out;
+      &__title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+      }
+      &__text {
+        display: flex;
+        justify-content: space-between;
+        & p {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 100%;
+        }
+      }
+      &__check {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        background: #99e2d0;
+        width: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & i {
+          color: white;
+          font-size: 22px;
+        }
+      }
     }
   }
   &__btn {
@@ -80,5 +123,14 @@
       opacity: 0.8;
       box-shadow: 0 3px 3px 3px #c0c0c0;
     }
+  }
+}
+
+@keyframes rotate-check {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
   }
 }
