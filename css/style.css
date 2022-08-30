@@ -256,7 +256,7 @@ span {
   overflow: hidden;
 }
 .restaurant__card:hover {
-  box-shadow: 0px 0px 6px #4a4747;
+  box-shadow: 0px 0px 12px #979292;
 }
 @media screen and (min-width: 767px) {
   .restaurant__card {
@@ -273,11 +273,12 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 13px;
   background-color: white;
 }
 .restaurant__card__title p {
   font-weight: 300;
+  margin-top: 2px;
 }
 .restaurant__card__new {
   background-color: #99e2d0;
@@ -338,6 +339,11 @@ span {
   align-items: center;
   justify-content: space-between;
   margin-top: 210px;
+}
+@media screen and (min-width: 767px) {
+  .main__title {
+    padding: 35px;
+  }
 }
 .main__title__heart {
   font-size: 25px;
@@ -410,6 +416,7 @@ span {
   display: flex;
   justify-content: space-between;
   font-weight: 300;
+  margin-top: 5px;
 }
 .food__card__body__text p {
   text-overflow: ellipsis;
@@ -417,6 +424,7 @@ span {
   white-space: nowrap;
   width: 100%;
   font-size: 16px;
+  margin-top: 5px;
 }
 .food__card__body__check {
   position: absolute;
