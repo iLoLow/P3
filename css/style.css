@@ -173,7 +173,7 @@ span {
 }
 .functioning__btn {
   display: block;
-  border-radius: 15px;
+  border-radius: 20px;
   border: none;
   background-color: #f6f6f6;
   box-shadow: 0 3px 3px 3px #dedede;
@@ -188,7 +188,7 @@ span {
   cursor: pointer;
 }
 .functioning__btn:hover {
-  background-color: rgba(146, 86, 220, 0.1176470588);
+  background-color: rgba(146, 86, 220, 0.0274509804);
 }
 .functioning__btn:hover i {
   color: #9356dc;
@@ -213,7 +213,7 @@ span {
 }
 .functioning__btn i {
   margin-left: 30px;
-  margin-right: 20px;
+  margin-right: 25px;
   font-size: 18px;
   color: #7e7e7e;
 }
