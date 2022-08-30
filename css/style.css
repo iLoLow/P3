@@ -415,6 +415,7 @@ span {
   display: flex;
   justify-content: space-between;
   font-weight: 300;
+  margin-top: 3px;
 }
 .food__card__body__text p {
   text-overflow: ellipsis;
