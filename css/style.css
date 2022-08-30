@@ -188,7 +188,7 @@ span {
   cursor: pointer;
 }
 .functioning__btn:hover {
-  background-color: rgba(146, 86, 220, 0.0274509804);
+  background-color: rgba(146, 86, 220, 0.1019607843);
 }
 .functioning__btn:hover i {
   color: #9356dc;
