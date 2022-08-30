@@ -380,7 +380,6 @@ span {
   height: 4px;
   width: 45px;
   background: #99e2d0;
-  margin-top: 5px;
 }
 .food__card {
   border-radius: 20px;
@@ -416,7 +415,6 @@ span {
   display: flex;
   justify-content: space-between;
   font-weight: 300;
-  margin-top: 5px;
 }
 .food__card__body__text p {
   text-overflow: ellipsis;
@@ -424,7 +422,6 @@ span {
   white-space: nowrap;
   width: 100%;
   font-size: 16px;
-  margin-top: 5px;
 }
 .food__card__body__check {
   position: absolute;
@@ -472,43 +469,43 @@ span {
 
 /*apparition menu food for restaurant page*/
 #apparition-menu-1 {
-  animation: 500ms 100ms linear apparition-menu-animation both;
+  animation: 250ms 100ms linear apparition-menu-animation both;
 }
 
 #apparition-menu-2 {
-  animation: 500ms 200ms linear apparition-menu-animation both;
+  animation: 350ms 200ms linear apparition-menu-animation both;
 }
 
 #apparition-menu-3 {
-  animation: 500ms 300ms linear apparition-menu-animation both;
+  animation: 350ms 300ms linear apparition-menu-animation both;
 }
 
 #apparition-menu-4 {
-  animation: 500ms 400ms linear apparition-menu-animation both;
+  animation: 350ms 400ms linear apparition-menu-animation both;
 }
 
 #apparition-menu-5 {
-  animation: 500ms 500ms linear apparition-menu-animation both;
+  animation: 350ms 500ms linear apparition-menu-animation both;
 }
 
 #apparition-menu-6 {
-  animation: 500ms 600ms linear apparition-menu-animation both;
+  animation: 350ms 600ms linear apparition-menu-animation both;
 }
 
 #apparition-menu-7 {
-  animation: 500ms 700ms linear apparition-menu-animation both;
+  animation: 350ms 700ms linear apparition-menu-animation both;
 }
 
 #apparition-menu-8 {
-  animation: 500ms 800ms linear apparition-menu-animation both;
+  animation: 350ms 800ms linear apparition-menu-animation both;
 }
 
 #apparition-menu-9 {
-  animation: 500ms 900ms linear apparition-menu-animation both;
+  animation: 350ms 900ms linear apparition-menu-animation both;
 }
 
 #apparition-menu-10 {
-  animation: 500ms 1s linear apparition-menu-animation both;
+  animation: 350ms 1s linear apparition-menu-animation both;
 }
 
 /*animation spinner loader*/
@@ -564,7 +561,7 @@ span {
 @keyframes apparition-menu-animation {
   0% {
     opacity: 0;
-    transform: translateY(50%);
+    transform: translateY(13%);
   }
   100% {
     opacity: 1;
